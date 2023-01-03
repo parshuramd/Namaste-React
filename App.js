@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-const heading1 = React.createElement("h1", { id: "first" }, "My First Heading");
-const heading2 = React.createElement(
-  "h1",
-  { id: "second" },
-  "My Second Heading"
+const Container = () => (
+  <div id="container">
+    <h1 id="first" key="first">
+      My First Heading
+    </h1>
+    <h2 id="second" key="second">
+      My second Heading
+    </h2>
+  </div>
 );
-const container = React.createElement("div", { id: "container" }, [
-  heading1,
-  heading2,
-]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(container);
+root.render(<Container />);
