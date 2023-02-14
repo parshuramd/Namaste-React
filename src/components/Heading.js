@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import { useState } from "react";
 const Heading = () => {
   return (
@@ -14,7 +13,11 @@ export const CombinedHeading = () => {
     <>
       <h1
         onMouseOver={() => {
-          setHeading("Changed");
+          if (heading === "default") {
+            setHeading("Changed");
+          } else {
+            setHeading("default");
+          }
         }}
       >
         {heading}
@@ -22,11 +25,9 @@ export const CombinedHeading = () => {
       <h2 id="second" key="second">
         My second Heading
       </h2>
-      <div>
-        <h3 id="third" key="third">
-          Third Heading
-        </h3>
-      </div>
+      <h3 id="third" key="third">
+        Third Heading
+      </h3>
     </>
   );
 };

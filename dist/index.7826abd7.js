@@ -27285,7 +27285,7 @@ var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _heading = require("./Heading");
 var _headingDefault = parcelHelpers.interopDefault(_heading);
 const Container = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headingDefault.default), {}, void 0, false, {
                 fileName: "src/components/Container.js",
@@ -27303,11 +27303,7 @@ const Container = ()=>{
                 columnNumber: 7
             }, undefined)
         ]
-    }, void 0, true, {
-        fileName: "src/components/Container.js",
-        lineNumber: 5,
-        columnNumber: 10
-    }, undefined);
+    }, void 0, true);
 };
 _c = Container;
 exports.default = Container;
@@ -27331,8 +27327,6 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _client = require("react-dom/client");
-var _clientDefault = parcelHelpers.interopDefault(_client);
 const Footer = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
         className: "footer",
@@ -27343,13 +27337,13 @@ const Footer = ()=>{
                 children: "@Parshuramd"
             }, void 0, false, {
                 fileName: "src/components/Footer.js",
-                lineNumber: 5,
+                lineNumber: 4,
                 columnNumber: 17
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Footer.js",
-        lineNumber: 4,
+        lineNumber: 3,
         columnNumber: 10
     }, undefined);
 };
@@ -27363,7 +27357,7 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hH5uf":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hH5uf":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c541 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27376,8 +27370,6 @@ parcelHelpers.export(exports, "CombinedHeading", ()=>CombinedHeading);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _client = require("react-dom/client");
-var _clientDefault = parcelHelpers.interopDefault(_client);
 var _s = $RefreshSig$();
 const Heading = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -27385,7 +27377,7 @@ const Heading = ()=>{
         children: "My First Heading"
     }, "first", false, {
         fileName: "src/components/Heading.js",
-        lineNumber: 5,
+        lineNumber: 4,
         columnNumber: 10
     }, undefined);
 };
@@ -27397,12 +27389,13 @@ const CombinedHeading = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 onMouseOver: ()=>{
-                    setHeading("Changed");
+                    if (heading === "default") setHeading("Changed");
+                    else setHeading("default");
                 },
                 children: heading
             }, void 0, false, {
                 fileName: "src/components/Heading.js",
-                lineNumber: 12,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -27410,21 +27403,15 @@ const CombinedHeading = ()=>{
                 children: "My second Heading"
             }, "second", false, {
                 fileName: "src/components/Heading.js",
-                lineNumber: 17,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    id: "third",
-                    children: "Third Heading"
-                }, "third", false, {
-                    fileName: "src/components/Heading.js",
-                    lineNumber: 21,
-                    columnNumber: 9
-                }, undefined)
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                id: "third",
+                children: "Third Heading"
+            }, "third", false, {
                 fileName: "src/components/Heading.js",
-                lineNumber: 20,
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27442,6 +27429,6 @@ $RefreshReg$(_c1, "CombinedHeading");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","e3CPO","2Ew96"], "2Ew96", "parcelRequire164e")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","e3CPO","2Ew96"], "2Ew96", "parcelRequire164e")
 
 //# sourceMappingURL=index.7826abd7.js.map

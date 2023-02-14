@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 const Footer = () => {
   return (
     <footer className="footer">
