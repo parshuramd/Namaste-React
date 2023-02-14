@@ -27284,26 +27284,16 @@ var _footer = require("./Footer");
 var _footerDefault = parcelHelpers.interopDefault(_footer);
 var _heading = require("./Heading");
 var _headingDefault = parcelHelpers.interopDefault(_heading);
+var _header = require("./Header");
+var _headerDefault = parcelHelpers.interopDefault(_header);
 const Container = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headingDefault.default), {}, void 0, false, {
-                fileName: "src/components/Container.js",
-                lineNumber: 6,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heading.CombinedHeading), {}, void 0, false, {
-                fileName: "src/components/Container.js",
-                lineNumber: 7,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
-                fileName: "src/components/Container.js",
-                lineNumber: 8,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true);
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+            fileName: "src/components/Container.js",
+            lineNumber: 7,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
 };
 _c = Container;
 exports.default = Container;
@@ -27315,7 +27305,7 @@ $RefreshReg$(_c, "Container");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Footer":"8pPOA","./Heading":"hH5uf"}],"8pPOA":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Footer":"8pPOA","./Heading":"hH5uf","./Header":"hsJbF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27429,6 +27419,86 @@ $RefreshReg$(_c1, "CombinedHeading");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","e3CPO","2Ew96"], "2Ew96", "parcelRequire164e")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hsJbF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bfed.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _headerCss = require("./Header.css");
+const Header = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "header-compo",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "logo",
+                    src: "https://img.freepik.com/premium-vector/restaurant-food-house-logo-template_57516-341.jpg?w=2000"
+                }, void 0, false, {
+                    fileName: "src/components/Header.js",
+                    lineNumber: 6,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "nav-items",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: "Home"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 9,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: "About"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 10,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: "Contact Us"
+                            }, void 0, false, {
+                                fileName: "src/components/Header.js",
+                                lineNumber: 11,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Header.js",
+                        lineNumber: 8,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Header.js",
+                    lineNumber: 7,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Header.js",
+            lineNumber: 5,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
+};
+_c = Header;
+exports.default = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$bfed.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Header.css":"l4jvN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"l4jvN":[function() {},{}]},["1xC6H","e3CPO","2Ew96"], "2Ew96", "parcelRequire164e")
 
 //# sourceMappingURL=index.7826abd7.js.map

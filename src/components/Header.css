@@ -1,48 +1,29 @@
-#first, #second, .footer {
-  color: #d2691e;
-  text-align: center;
-}
-
-.creator {
-  color: #000;
-  padding-top: 5px;
-}
-
-#third {
-  text-align: center;
-}
-
 * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-
 .logo {
-  width: 100px;
   padding-left: 10px;
+  width: 100px;
   display: inline;
 }
-
 .header-compo {
-  border: 1px solid #000;
   display: flex;
+  border: 1px solid black;
 }
-
 .nav-items {
+  padding: 0 10px 0;
+  /* width: auto; */
   align-items: end;
-  padding: 0 10px;
 }
-
 .nav-items > ul {
   list-style-type: none;
   display: flex;
 }
 
 .nav-items > ul > li {
-  cursor: pointer;
   padding: 40px 10px 0 0;
   font-size: large;
+  cursor: pointer;
 }
-
-/*# sourceMappingURL=index.9e4c6fd2.css.map */
