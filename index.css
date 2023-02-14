@@ -1,5 +1,13 @@
 #first,
-#second {
+#second,
+.footer {
   color: chocolate;
+  text-align: center;
+}
+.creator {
+  color: black;
+  padding-top: 5px;
+}
+#third {
   text-align: center;
 }
