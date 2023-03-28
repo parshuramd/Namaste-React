@@ -5,4 +5,4 @@ import Container from "./src/components/Container";
 import FetchData from "./src/components/FetchData";
 import ReqApi from "./src/components/ReqApi";
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<ReqApi />);
+root.render(<Body />);

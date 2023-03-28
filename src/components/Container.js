@@ -6,7 +6,7 @@ const Container = ({ about }) => {
   return (
     <>
       <Header home="Home" about={about} contact_us="Contact Us" />
-      <Footer />
+      {/* <Footer /> */}
       {/* <Heading />
       <CombinedHeading />
       <Footer /> */}

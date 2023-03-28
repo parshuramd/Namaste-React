@@ -25,6 +25,9 @@ const Header = ({ contact_us, home, about }) => {
             src="https://img.freepik.com/premium-vector/restaurant-food-house-logo-template_57516-341.jpg?w=2000"
           />
         </div>
+        <h1>
+          FOOD HOUSE!! <span>Your Cravings Final Destination</span>
+        </h1>
         <div className="nav-items">
           <ul>
             <li>{home}</li>
@@ -41,7 +44,7 @@ const Header = ({ contact_us, home, about }) => {
           </button>
         </div>
       </div>
-      <div>
+      {/* <div>
         <ul>
           {dataApi.map((data) => (
             <li key={data.id}>
@@ -49,24 +52,8 @@ const Header = ({ contact_us, home, about }) => {
             </li>
           ))}
         </ul>
-        {/* {dataApi.products[0].id}
-        {dataApi.products[0].title} */}
-      </div>
-      {/* {!products && (
-        <ul>
-          {products.map((data) => {
-            <li key={data.id}>{data.title}</li>;
-          })}
-        </ul>
-      )} */}
-
-      {/* {!completed && (
-        <div>
-          <div>{id}</div>
-          <div>{title}</div>
-          <div>{userId}</div>
-        </div>
-      )} */}
+        
+      </div> */}
     </>
   );
 };
