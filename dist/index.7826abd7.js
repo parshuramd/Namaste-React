@@ -27634,31 +27634,43 @@ const ReqApi = ()=>{
     _s();
     const [reqData, setReqData] = (0, _react.useState)(null);
     const [isLoading, setIsLoading] = (0, _react.useState)(false);
+    const [error, setError] = (0, _react.useState)(null);
     console.log(reqData);
     (0, _react.useEffect)(()=>{
         async function getData() {
             setIsLoading(true);
-            const data1 = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.582663010689362&lng=73.72609610491192&page_type=DESKTOP_WEB_LISTING");
-            console.log(data1);
-            const json = await data1.json();
-            console.log(json);
-            setReqData(json);
-            setIsLoading(false);
+            try {
+                const data1 = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.582663010689362&lng=73.72609610491192&page_type=DESKTOP_WEB_LISTING");
+                const json = await data1.json();
+                setReqData(json);
+                setIsLoading(false);
+            } catch (error) {
+                setError(error);
+            }
         }
         getData();
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _renderDataFromApiDefault.default), {
-            data: reqData,
-            isLoading: isLoading
-        }, void 0, false, {
-            fileName: "src/components/ReqApi.js",
-            lineNumber: 20,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false);
+        children: [
+            error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "No restaurants Found."
+            }, void 0, false, {
+                fileName: "src/components/ReqApi.js",
+                lineNumber: 23,
+                columnNumber: 17
+            }, undefined),
+            !error && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _renderDataFromApiDefault.default), {
+                data: reqData,
+                isLoading: isLoading
+            }, void 0, false, {
+                fileName: "src/components/ReqApi.js",
+                lineNumber: 24,
+                columnNumber: 18
+            }, undefined)
+        ]
+    }, void 0, true);
 };
-_s(ReqApi, "WHz0WN2k68mZ9xQm5KKlnBKWTKg=");
+_s(ReqApi, "Lvjq3a7NYsqgw4EqxTCH/emaCg4=");
 _c = ReqApi;
 exports.default = ReqApi;
 var _c;
