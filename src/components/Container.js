@@ -2,10 +2,11 @@ import React from "react";
 import Footer from "./Footer";
 import Heading, { CombinedHeading } from "./Heading";
 import Header from "./Header";
-const Container = () => {
+const Container = ({ about }) => {
   return (
     <>
-      <Header />
+      <Header home="Home" about={about} contact_us="Contact Us" />
+      <Footer />
       {/* <Heading />
       <CombinedHeading />
       <Footer /> */}
